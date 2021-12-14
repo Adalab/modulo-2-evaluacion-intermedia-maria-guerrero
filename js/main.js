@@ -67,16 +67,6 @@ function randomNumEl() {
     return computerSelection;
 }
 
-
-function pointsResult() {
-
-    let points = 0;
-
-    if (randomResult.innerHTML === '¡Has ganado!') {
-        playerResult.innerHTML = playerResult.innerHTML + points++;
-    }
-}
-
 function handleClickUpdate(event) {
     event.preventDefault();
     let resultVariable = randomNumEl();
