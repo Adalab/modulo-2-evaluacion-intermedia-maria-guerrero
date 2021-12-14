@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluación intermedia, módulo 2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <main class="main">
+        <h1 class="titleStyles">Juego Piedra, Papel y Tijera</h1>
+        <h2 class="subtitleStyles">Introduce aquí tu jugada:</h2>
+
+        <form action="">
+
+            <label for=""></label>
+            <select class="js_selected selectStyles" name="game_selected" id="game_selected">
+                <option value="selection">Seleccione su jugada</option>
+                <option value="piedra" id="piedra">Piedra</option>
+                <option value="papel" id="papel">Papel</option>
+                <option value="tijera" id="tijera">Tijera</option>
+            </select>
+            <input class="js_button buttonStyles" type="submit" value="Jugar">
+
+        </form>
+
+        <h3 class="js_random_result playStyles">Vamos a Jugar!</h3>
+
+        <h4 class="js_playerResult playerStyles">Jugador: </h4>
+        <h4 class="js_computerResult computerStyles">Computadora: </h4>
+
+    </main>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>

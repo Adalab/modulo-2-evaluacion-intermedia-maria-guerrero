@@ -1,0 +1,46 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.titleStyles {
+    color: rgb(221, 204, 46);
+    margin: 20px;
+}
+    .subtitleStyles {
+        color: rgb(95, 95, 95);
+        margin-top: 5px;
+    }
+
+.selectStyles {
+    padding: 7px;
+    border: none;
+    border-bottom: turquoise solid 2px;
+}
+
+.playStyles {
+    padding: 7px;
+    color: white;
+    background-color: turquoise;
+    border-radius: 10px;
+}
+
+.buttonStyles {
+    cursor: pointer;
+    padding: 5px;
+    border: none;
+    color: white;
+    background-color: turquoise;
+    border-radius: 10px;
+}
+
+.playerStyles {
+    margin: 7px;
+}
+
+.computerStyles {
+    margin: 7px;
+}
