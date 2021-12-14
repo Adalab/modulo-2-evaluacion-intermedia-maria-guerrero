@@ -42,9 +42,9 @@ function changeOptionsGame(resultVariable) {
         } else if (valueEl === 'tijera') {
             
             if (resultVariable === 'piedra') {
-                randomResult.innerHTML = '¡Has ganado!'
+                randomResult.innerHTML = '¡Has ganado!';
             } else if ( resultVariable ==='papel') {
-                randomResult.innerHTML = '¡Has ganado!'
+                randomResult.innerHTML = '¡Has ganado!';
             }
         }
     
@@ -66,7 +66,16 @@ function randomNumEl() {
 
     return computerSelection;
 }
-   
+
+
+function pointsResult() {
+
+    let points = 0;
+
+    if (randomResult.innerHTML === '¡Has ganado!') {
+        playerResult.innerHTML = playerResult.innerHTML + points++;
+    }
+}
 
 function handleClickUpdate(event) {
     event.preventDefault();
