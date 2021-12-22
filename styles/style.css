@@ -5,60 +5,127 @@
 
 .main {
     height: 100vh;
+    background: linear-gradient(to bottom, #f8c0da 0%, #fda67d 100%);
+    color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
 }
 
-.emojiStyles {
-    font-size: 30px;
-    color: rgb(91, 136, 131);
+.imageElement {
+    width: 80px;
 }
 
-.titleStyles {
-    color: rgb(221, 204, 46);
-    margin: 20px;
-    text-transform: capitalize;
+.title1 {
+    text-transform: uppercase;
+    color: rgb(158, 57, 10);
+    font-size: 45px;
+    margin-top: 20px;
+    font-weight: bold;
 }
-    .subtitleStyles {
-        color: rgb(95, 95, 95);
-        margin-top: 5px;
-        margin-bottom: 20px;
-    }
+.title2 {
+    text-transform: uppercase;
+    font-size: 35px;
+    margin-bottom: 30px;
+    color: rgb(255, 255, 255);
+    font-weight: lighter;
+}
+
+.introduceStyles {
+    font-size: 20px;
+}
+
+.divContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
 
 .selectStyles {
-    padding: 7px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
     border: none;
-    border-bottom: turquoise solid 2px;
-    margin-right: 15px;
-}
-
-.playStyles {
-    margin-top: 25px;
-    margin-bottom: 18px;
-    padding: 7px;
-    color: white;
-    background-color: turquoise;
-    border-radius: 10px;
+    border-bottom: rgb(82, 82, 82) solid 2px;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 15px;
+    background-color: transparent;
+    color: rgb(82, 82, 82);
+    cursor: pointer;
 }
 
 .buttonStyles {
-    cursor: pointer;
-    padding: 5px;
+    padding: 7px;
     border: none;
+    border-radius: 3px;
+    margin-left: 20px;
+    font-weight: normal;
+    margin-top: 20px;
     color: white;
-    background-color: turquoise;
+    background-color: rgb(51, 124, 158);
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+    .hidden1 {
+        display: none;
+    }
+
+.buttonResetStyles {
+    padding: 7px;
+    border: none;
+    border-radius: 3px;
+    margin-left: 20px;
+    font-weight: normal;
+    margin-top: 20px;
+    color: white;
+    background-color: rgb(158, 130, 51);
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+    .hidden2 {
+        display: none;
+    }
+
+.letsPlayStyles {
+    margin-top: 30px;
+    padding: 10px;
+    border-radius: 7px;
+    background-color: rgba(177, 255, 248, 0.74);
+    color: rgb(82, 82, 82);
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+.playerScoreStyles {
+    margin-top: 50px;
+    background: rgba(255, 255, 255, 0.137);
+    padding: 5px;
     border-radius: 10px;
+    font-weight: normal;
+    font-family: 'Roboto Mono', monospace;
+    color: rgb(255, 255, 255);
 }
 
-.playerStyles {
-    margin: 7px;
-    color: rgb(95, 95, 95);
+.computerScoreStyles {
+    margin-top: 10px;
+    background: rgba(255, 255, 255, 0.137);
+    padding: 5px;
+    border-radius: 10px;
+    font-weight: normal;
+    font-family: 'Roboto Mono', monospace;
+    color: rgb(255, 255, 255);
 }
 
-.computerStyles {
-    margin: 7px;
-    color: rgb(95, 95, 95);
+@media (min-width: 768px) {
+    .title2 {
+        border-bottom: rgba(255, 255, 255, 0.322) 2px solid;
+        padding: 10px 50px 10px 50px;
+    }
 }

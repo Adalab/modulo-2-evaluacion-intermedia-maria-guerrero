@@ -4,35 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Evaluación intermedia. Módulo 2</title>
+    <title>Piedra, papel y tijera</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;700&family=Roboto+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
     <main class="main">
-        <h4 class="emojiStyles">✊🏻 ✋🏻 ✌🏻</h4>
-        <h1 class="titleStyles">Juego piedra, papel y tijera</h1>
-        <h2 class="subtitleStyles">Introduce aquí tu jugada:</h2>
 
-        <form action="">
+        <img class="imageElement" src="./images/piedra_papel_tijera.png" alt="">
+        <h1 class="title1">Juego</h1>
+        <h1 class="title2">piedra, papel y tijera</h1>
 
-            <label for=""></label>
-            <select class="js_selected selectStyles" name="game_selected" id="game_selected">
-                <option value="selection">Seleccione su jugada</option>
-                <option value="piedra" id="piedra">Piedra</option>
-                <option value="papel" id="papel">Papel</option>
-                <option value="tijera" id="tijera">Tijera</option>
+        <form class="js_form form" action="">
+
+            <label class="introduceStyles" for="">Introduce aquí tu jugada:</label>
+            <div class="divContainer">
+            <select class="js_select selectStyles" name="select" id="select">
+                <option value="sectionOption">Seleccione su jugada</option>
+                <option value="rock">Piedra</option>
+                <option value="paper">Papel</option>
+                <option value="scissors">Tijera</option>
             </select>
-            <input class="js_button buttonStyles" type="submit" value="Jugar">
+            
+            <input class="js_input_button buttonStyles" type="submit" value="jugar">
+            
+            <input class="js_input_buttonReset buttonResetStyles hidden2" type="submit" value="reset">
+            </div>
 
         </form>
 
-        <h3 class="js_random_result playStyles">Vamos a Jugar!</h3>
+        <h3 class="js_lets_play letsPlayStyles">¡Vamos a jugar!</h3>
 
-        <h4 class="js_playerResult playerStyles">Jugador: </h4>
-        <h4 class="js_computerResult computerStyles">Computadora: </h4>
+        <h4 class="js_player_score playerScoreStyles">Jugador: 0</h4>
+        <h4 class="js_computer_score computerScoreStyles">Ordenador: 0</h4>
 
     </main>
 
